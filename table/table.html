@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables | FA4 Project</title>
+    <link rel="shortcut icon" href="/FA4/images/sjs.png" type="image/x-icon">
+    <link rel="stylesheet" href="table.css">
+</head>
+<body>
+    <header><div class="header border-right">
+        <div class="heading">
+          <h1>FA4 PROJECT</h1>
+          <div class="owner">made by RAYAAN</div>
+        </div>
+        <div class="navigation">
+          <div class="home" ><a href="/FA4/index.html" ><img src="/FA4/images/home.png" alt="hh" height="20px"><br><div class="anchor-home"><div class="anchor-home">Home</div></div></a></div>
+          <a href="/FA4/main list/main-list.html">Lists</a>
+          <a href="">Images</a>
+          <a href="/FA4/table/table.html" class="table-link active">Tables</a>
+          <a href="https://www.instagram.com/rayaan01._/" class="logo-head"><img
+            src="/FA4/images/instagram.png"
+            alt="logo-sjs"
+            height="60"
+            class="logo-head border-left"
+          /></a>
+          <a href="https://github.com/CodedRay01" class="logo-head"><img
+            src="/FA4/images/github12.png"
+            alt="logo-sjs"
+            height="40"
+            class="logo-head"
+          /></a>
+          <a href="https://sjskashmir.com" class="logo-head"><img
+            src="/FA4/images/sjs.png"
+            alt="logo-sjs"
+            height="40"
+            class="logo-head"
+          /></a>
+        </div>
+      </div>
+      </header>
+<main>
+  
+  <div class="parent-nxt spaceb">
+    <button class="nxt" title="Next">
+      <a href="/FA4/main list/main-list.html"> &lt; &lt;  Previous</a>
+    </button>
+    <button class="nxt" title="Next">
+      <a href="/FA4/table/table-properties"> Next > ></a>
+    </button></div>
+  <section class="table">
+<h1 class="h">HTML Tables</h1>
+<div class="p ">HTML tables allow you to arrange data like text, images, and links in rows and columns. You use the <div class="c inline">&lt;table&gt;</div> tag to start and end a table.</div>
+<div class="code p h">
+  <code>
+    &lt;table&gt; <br>
+      // table content <br>
+    &lt;/table&gt; <br>
+  </code>
+</div>
+<div class="h"><h3>Key Elements of HTML Table</h3></div>
+<div class="p">
+  <li>&lt;table&gt;: Defines the table itself.</li>
+<li>&lt;tr&gt;: Used for table rows.</li>
+<li>&lt;th&gt;: Used for table headings.</li>
+<li>&lt;td&gt;: Used for table cells (data).</li>
+</div>
+<h3 class="h">
+  Basic Table Structure
+</h3>
+<div class="code p h">
+  <code><pre class="c">
+    &lt;table&gt;
+       &lt;tr&gt;
+         &lt;th&gt;Name&lt;/th&gt;
+         &lt;th&gt;Age&lt;/th&gt;
+       &lt;/tr&gt;
+      &lt;tr&gt;
+        &lt;td&gt;Harry&lt;/td&gt;
+        &lt;td&gt;100/t&gt;
+      &lt;/tr&gt;
+    &lt;/table&gt;</pre>
+  </code>
+</div>
+<h3 class="h">
+  rowspan and colspan Attributes
+</h3>
+<div class="p"><b>Rowspan:</b> If you want a table cell to span multiple rows, you can use the rowspan attribute.</div>
+  <div class="code h pp">
+    <code>
+      &lt;td rowspan="value"&gt;&lt;/td&gt;
+    </code>
+  </div>
+<div class="p">
+  <b>Colspan: </b>If you want a table cell to span multiple columns, you can use the colspan attribute.
+</div>
+<div class="code h pp">
+  <code>
+    &lt;td colspan="value"&gt;&lt;/td&gt;
+  </code>
+</div>
+  <h3 class="h">
+    Example for Colspan:
+  </h3>
+  <div class="code p">
+    <pre class="c">
+    <code>
+      &lt;table border="1"&gt;
+        &lt;tr&gt;
+          &lt;td colspan="2"&gt;Merged Columns</td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td>Column 1&lt;/td&gt;
+          &lt;td>Column &lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+    </code>
+    </pre>
+    
+  </div>
+<h4 class="h p">
+  Output:
+</h4>
+<div class="h pp">
+  <table border="1">
+    <tr>
+      <td colspan="2">Merged Columns</td>
+    </tr>
+    <tr>
+      <td>Column 1</td>
+      <td>Column 2</td>
+    </tr>
+  </table>
+</div>
+<h3 class="h">
+  Example for Rowspan:
+</h3>
+<div class="code p">
+  <code>
+    <pre class="c">
+      &lt;table border="1"&gt;
+        &lt;tr&gt;
+          &lt;td&gt;Row 1, Column 1&lt;/td&gt;
+          &lt;td rowspan="2"&gt;Merged Rows&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;Row 2, Column 1&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/table&gt;
+    </pre>
+  </code>
+</div>
+<h4 class="h p">
+  Output:
+</h4>
+<div class="pp">
+  <table border="1">
+    <tr>
+      <td>Row 1, Column 1</td>
+      <td rowspan="2">Merged Rows</td>
+    </tr>
+    <tr>
+      <td>Row 2, Column 1</td>
+    </tr>
+  </table>
+
+</div>
+
+</section>
+<div class="parent-nxt spaceb">
+  <button class="nxt" title="Next">
+    <a href="/FA4/main list/main-list.html"> &lt; &lt;  Previous</a>
+  </button>
+  <button class="nxt" title="Next">
+    <a href="/FA4/table/table-properties"> Next > ></a>
+  </button></div>
+</main>
+
+      <footer>
+        <div class="name">Rayaan Farooq</div><div class="copyright">Copyright © 2024 codedray01.github.io/fa4</div> <div class="links-footer"><a href="https://github.com/CodedRay01"><img src="/FA4/images/github.png" alt="github link" height="40px" class="github-link"></a>
+             <a href="https://www.instagram.com/rayaan01._/"><img src="/FA4/images/ins.png" alt="fg" class="github-link" height="40px"></a></div>
+    </footer>
+</body>
+</html>
